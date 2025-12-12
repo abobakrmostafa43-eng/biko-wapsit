@@ -1,6 +1,7 @@
 # biko-wapsit<!DOCTYPE html>
 <html lang="ar" dir="rtl">
-<head>
+<head><link rel="stylesheet" href="style.css"> 
+
     <meta charset="UTF-8">
     <title>موقعي الأول</title>
 </head>
