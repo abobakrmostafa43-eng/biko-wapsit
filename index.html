@@ -14,17 +14,16 @@
         <p>أنا الآن أتعلم كيفية تحويل الأفكار والتصاميم إلى واقع ملموس عبر البرمجة.</p>
         <p>هذا الموقع هو حجر الأساس لربط مهاراتي في الجرافيك ديزاين مع تطوير الويب.</p>
     </main>
-</body>
-</html>
+const images = ["1000056122.jpg", "design2.jpg", "logo3.png", "ad4.webp"]; // قائمة بأسماء صورك
+const gallery = document.querySelector('.gallery-container');
 
-<section class="gallery-container">
-    <div class="gallery-item">
-        <img src="1000056122.jpg" alt="تصميم إعلان">
-    </div>
-    <div class="gallery-item">
-        <img src="1000057075.jpg" alt="تصميم شعار">
-    </div>
-    <div class="gallery-item">
-        <img src="your-third-design.jpg" alt="تصميم هوية">
-    </div>
-</section>
+images.forEach(imgName => {
+    const item = `
+        <div class="gallery-item">
+            <img src="${imgName}" alt="من أعمالي">
+        </div>`;
+    gallery.innerHTML += item;
+});
+</body>
+    
+
